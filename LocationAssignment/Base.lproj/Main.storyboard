@@ -47,7 +47,7 @@
                                     <action selector="email_self_click:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7W7-5a-0RN"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Lat, Lon" translatesAutoresizingMaskIntoConstraints="NO" id="vPj-ls-rwf">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Timestamp, Lat, Lon" translatesAutoresizingMaskIntoConstraints="NO" id="vPj-ls-rwf">
                                 <rect key="frame" x="20" y="430" width="280" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

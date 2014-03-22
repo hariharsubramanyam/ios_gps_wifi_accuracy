@@ -61,7 +61,7 @@
         MFMailComposeViewController *mailCont = [[MFMailComposeViewController alloc] init];
         mailCont.mailComposeDelegate = self;
         
-        [mailCont setSubject:@"Latency and Throughput Results"];
+        [mailCont setSubject:@"Location Results"];
         [mailCont setToRecipients:[NSArray arrayWithObject:@""]];
         [mailCont setMessageBody:self.lblOutput.text isHTML:NO];
         
@@ -74,6 +74,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.mapWidget.delegate = self;
+    self.lblOutput.text = @"Timestamp, Lat, Lon\n";
 }
 
 - (void)didReceiveMemoryWarning
@@ -86,7 +87,7 @@
     self.btnTrackLocation.enabled = YES;
     self.switchUseGPS.enabled = YES;
     self.btnEmailSelf.enabled = NO;
-    self.lblOutput.text = @"Lat, Lon";
+    self.lblOutput.text = @"Timestamp, Lat, Lon\n";
     [self dismissModalViewControllerAnimated:YES];
 }
 
@@ -97,7 +98,7 @@
     NSDate* eventDate = location.timestamp;
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
     if (abs(howRecent) < 60.0) {
-        self.lblOutput.text = [self.lblOutput.text stringByAppendingString:[NSString stringWithFormat:@"latitude %+.6f, longitude %+.6f\n",
+        self.lblOutput.text = [self.lblOutput.text stringByAppendingString:[NSString stringWithFormat:@"%f,%+.6f, %+.6f\n", location.timestamp.timeIntervalSince1970,
                                                                             location.coordinate.latitude,
                                                                             location.coordinate.longitude]];
         
