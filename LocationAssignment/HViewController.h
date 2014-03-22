@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MFMailComposeViewController.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface HViewController : UIViewController
+@interface HViewController : UIViewController<MFMailComposeViewControllerDelegate, CLLocationManagerDelegate,
+    MKMapViewDelegate>
 
 @end

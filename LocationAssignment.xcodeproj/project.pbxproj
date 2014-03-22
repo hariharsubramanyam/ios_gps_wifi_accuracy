@@ -22,6 +22,7 @@
 		733197E918DE1BA3001CBEED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 733197E718DE1BA3001CBEED /* InfoPlist.strings */; };
 		733197EB18DE1BA3001CBEED /* LocationAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 733197EA18DE1BA3001CBEED /* LocationAssignmentTests.m */; };
 		733197F518DE1CD3001CBEED /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733197F418DE1CD3001CBEED /* CoreLocation.framework */; };
+		733197F918DE32E0001CBEED /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733197F818DE32E0001CBEED /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		733197E818DE1BA3001CBEED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		733197EA18DE1BA3001CBEED /* LocationAssignmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationAssignmentTests.m; sourceTree = "<group>"; };
 		733197F418DE1CD3001CBEED /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		733197F818DE32E0001CBEED /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			files = (
 				733197F518DE1CD3001CBEED /* CoreLocation.framework in Frameworks */,
 				733197C218DE1BA3001CBEED /* CoreGraphics.framework in Frameworks */,
+				733197F918DE32E0001CBEED /* MapKit.framework in Frameworks */,
 				733197C418DE1BA3001CBEED /* UIKit.framework in Frameworks */,
 				733197C018DE1BA3001CBEED /* Foundation.framework in Frameworks */,
 			);
@@ -104,6 +107,7 @@
 		733197BE18DE1BA3001CBEED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				733197F818DE32E0001CBEED /* MapKit.framework */,
 				733197F418DE1CD3001CBEED /* CoreLocation.framework */,
 				733197BF18DE1BA3001CBEED /* Foundation.framework */,
 				733197C118DE1BA3001CBEED /* CoreGraphics.framework */,
@@ -207,7 +211,7 @@
 					733197BB18DE1BA3001CBEED = {
 						SystemCapabilities = {
 							com.apple.iOS = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -468,6 +472,7 @@
 				733197F018DE1BA3001CBEED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		733197F118DE1BA3001CBEED /* Build configuration list for PBXNativeTarget "LocationAssignmentTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +481,7 @@
 				733197F318DE1BA3001CBEED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
