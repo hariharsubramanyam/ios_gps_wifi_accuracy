@@ -8,7 +8,12 @@
 
 #import "HViewController.h"
 
+
 @interface HViewController ()
+@property (weak, nonatomic) IBOutlet UISwitch *switchUseGPS;
+@property (weak, nonatomic) IBOutlet UIButton *btnTrackLocation;
+@property (weak, nonatomic) IBOutlet UITextView *lblOutput;
+@property (weak, nonatomic) IBOutlet UIButton *btnEmailSelf;
 
 @end
 
